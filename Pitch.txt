@@ -1,0 +1,34 @@
+```Notre projet consiste à développer un outil d’audit de conformité GRC (Gouvernance, Risques et Conformité) permettant d’évaluer automatiquement le niveau de maturité d’une organisation par rapport à la norme ISO 27001, qui encadre la sécurité des systèmes d’information.
+
+Aujourd’hui, la majorité des audits de conformité se font encore à l’aide de tableurs ou d’outils disparates. Cela rend la collecte de preuves fastidieuse, le suivi des non-conformités complexe et les rapports souvent incomplets.
+Notre solution vise à automatiser et centraliser l’ensemble de ce processus, depuis la préparation de l’audit jusqu’à la génération du rapport final.
+
+Concrètement, l’outil permettra :
+
+D’importer le référentiel ISO 27001 (clauses, objectifs et contrôles de l’annexe A) ;
+
+De créer des campagnes d’audit par organisation, département ou périmètre technique ;
+
+De répondre à des questionnaires dynamiques (Oui / Non / Partiel) avec la possibilité d’ajouter des commentaires et de joindre des preuves ;
+
+D’obtenir un score de conformité automatique par domaine (politique, contrôle d’accès, cryptographie, etc.) ;
+
+De visualiser les écarts via des graphiques et des rapports PDF/HTML exportables ;
+
+Et de gérer les plans d’action correctifs, assigner les tâches et suivre leur avancement.
+
+Sur le plan technique, le système repose sur une architecture modulaire et conteneurisée :
+
+Frontend Angular : interface claire et ergonomique pour les auditeurs et responsables sécurité ;
+
+Backend API (FastAPI ou NestJS) : gestion des utilisateurs, des contrôles, des audits et du scoring ;
+
+Base de données PostgreSQL pour stocker les réponses, les rapports et l’historique ;
+
+Stockage MinIO (S3) pour les preuves ;
+
+Le tout orchestré via Docker Compose, facilitant le déploiement et la scalabilité.
+
+L’objectif final est d’offrir une plateforme capable de réduire drastiquement le temps d’un audit, d’améliorer la traçabilité des actions et de fournir une vue en temps réel du niveau de conformité d’une organisation.
+
+À terme, l’outil pourrait s’étendre à d’autres standards (ISO 27701, NIST, RGPD, PCI-DSS) et intégrer des vérifications techniques automatiques, pour croiser les données humaines et techniques dans une logique de conformité continue.```
