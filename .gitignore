@@ -20,6 +20,7 @@
 /.ng/
 /.aws
 /.DS_Store
+/Pitch.txt
 
 # TypeScript cache
 *.tsbuildinfo
